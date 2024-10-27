@@ -1,0 +1,20 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "usernamehw.errorlens",
+                "IgorSbitnev.error-gutters",
+                "premparihar.gotestexplorer"
+            ]
+        }
+    },
+    "containerEnv": {
+        // Assumes you are using Docker Desktop for Mac (host) and have XQuartz installed and setup there.
+        // cf. https://gist.github.com/sorny/969fe55d85c9b0035b0109a31cbcb088
+        "DISPLAY": "docker.for.mac.host.internal:0"
+    }
+}
